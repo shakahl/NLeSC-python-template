@@ -69,6 +69,5 @@ setup(
     ],
     extras_require={
         'dev':  ['prospector[with_pyroma]', 'yapf', 'isort'],
-    },
-    data_files=[('citation/{{ cookiecutter.project_slug.lower().replace(' ', '_').replace('-', '_')}}', ['CITATION.cff'])]
+    }
 )
