@@ -20,6 +20,8 @@
      - |Python Build| |PyPI Publish|
    * - Metadata consistency
      - |metadata consistency|
+   * - Code coverage of unit tests
+     - |unit test code coverage|
 
 (Customize these badges with your own links, and check https://shields.io/ or https://badgen.net/ to see which other badges are available.)
 
@@ -64,6 +66,12 @@
 .. |metadata consistency| image:: https://github.com/{{ cookiecutter.github_organization }}/{{ cookiecutter.project_slug }}/workflows/cffconvert/badge.svg
    :target: https://github.com/{{ cookiecutter.github_organization }}/{{ cookiecutter.project_slug }}/actions?query=workflow%3A%22cffconvert%22
    :alt: metadata consistency badge
+
+{% if cookiecutter.coverage_report == 'Coveralls' -%}
+.. |unit test code coverage| image:: https://coveralls.io/repos/github/{{ cookiecutter.github_organization }}/{{ cookiecutter.project_slug }}/badge.svg?branch=main
+  :target: https://coveralls.io/github/{{ cookiecutter.github_organization }}/{{ cookiecutter.project_slug }}?branch=main
+  :alt: Code coverage of unit tests
+{% endif -%}
 
 ################################################################################
 {{ cookiecutter.project_name }}

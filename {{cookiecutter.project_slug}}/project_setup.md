@@ -66,6 +66,10 @@ help you decide which tool to use for packaging.
     -   Configuration can be found in `.travis.yml`
     -   [Getting started with Travis
         CI](https://docs.travis-ci.com/user/getting-started/)
+{% if cookiecutter.coverage_report == 'Coveralls' -%}
+-   Use [coveralls.io](http://coveralls.io/) to show your unit test code coverage to the world
+    -   This can be enabled by logging into [coveralls.io](http://coveralls.io/) and adding the repository
+{% endif -%}
 -   [Relevant section in the guide](https://guide.esciencecenter.nl/#/best_practices/language_guides/python?id=testing)
 
 ## Documentation
